@@ -22,7 +22,7 @@ export default function Home() {
               <span className="text-primary">Jeremy</span> Earl
             </h1>
             <p className="text-sm p-5 md:text-sm max-w-2xl">
-              Hi there! I'm an aspiring UX and UI designer with a knack for
+              Hi there! I&apos;m an aspiring UX and UI designer with a knack for
               front-end development, coupled with a strong interest in back-end
               technologies.
             </p>
