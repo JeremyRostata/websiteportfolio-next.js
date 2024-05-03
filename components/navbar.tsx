@@ -1,32 +1,39 @@
 import React from "react";
 import Link from "next/link";
 import { Button } from "./ui/button";
+import Navsheet from "./nav-sheet";
+import { ModeToggle } from "./themetoggle";
 
 const navbartop = () => {
   return (
-    <nav className="bg-primary/10 backdrop-blur fixed w-full flex justify-center py-4 z-50">
-      <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-        <div className="hidden sm:ml-6 sm:block">
-          <div className="flex space-x-8">
-            <Link href="#">
-              <Button variant={"ghost"}>Home</Button>
-            </Link>
-            <Link href="#">
-              <Button variant={"ghost"}>About Me</Button>
-            </Link>
-            <Link href="#">
-              <Button variant={"ghost"}>Achievements</Button>
-            </Link>
-            <Link href="#">
-              <Button variant={"ghost"}>Projects</Button>
-            </Link>
-            <Link href="#">
-              <Button variant={"ghost"}>Contact</Button>
-            </Link>
-          </div>
-        </div>
+    <div className="flex h-full items-center mx-4">
+      <div className="md:hidden">
+        <Navsheet />
       </div>
-    </nav>
+      <nav className="hidden md:block space-x-4">
+        <Link href="#">
+          <Button variant={"ghost"}>Home</Button>
+        </Link>
+        <Link href="#">
+          <Button variant={"ghost"}>About Me</Button>
+        </Link>
+        <Link href="#">
+          <Button variant={"ghost"}>Achievements</Button>
+        </Link>
+        <Link href="#">
+          <Button variant={"ghost"}>Projects</Button>
+        </Link>
+        <Link href="#">
+          <Button variant={"ghost"}>Contact</Button>
+        </Link>
+        <Link href="#">
+          <Button variant={"outline"}>Resume</Button>
+        </Link>
+      </nav>
+      <div className="flex flex-1 justify-end">
+        <ModeToggle />
+      </div>
+    </div>
   );
 };
 
