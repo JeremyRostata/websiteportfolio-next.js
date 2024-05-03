@@ -118,8 +118,8 @@ export default function Home() {
                 <CardHeader>
                   <CardTitle>Password</CardTitle>
                   <CardDescription>
-                    Change your password here. After saving, you'll be logged
-                    out.
+                    Change your password here. After saving, you&apos;ll be
+                    logged out.
                   </CardDescription>
                 </CardHeader>
               </Card>
@@ -147,8 +147,8 @@ export default function Home() {
                 <CardHeader>
                   <CardTitle>Password</CardTitle>
                   <CardDescription>
-                    Change your password here. After saving, you'll be logged
-                    out.
+                    Change your password here. After saving, you&apos;ll be
+                    logged out.
                   </CardDescription>
                 </CardHeader>
               </Card>
